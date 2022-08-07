@@ -58,25 +58,78 @@ export const projects = [
 
   },
   {
-    id: "d",
-    name: "Kakao-Clone",
-    description:  `카카오톡 디자인을 CSS와 HTML을 사용하여 구현하였습니다.`,
-    github: `https://github.com/DonggiChae/kokoa-clone`,
-    gitpages: 'https://donggichae.github.io/kokoa-clone/',
-    stacks: ['HTML', 'CSS', 'Github'],
-    img: "kakao_clone.png"
+    id: "TwitterClone",
+    name: "TwitterClone",
+    description:  `FireBase를 사용하여 백엔트 코딩 없이 트위터 클론을 하였습니다. 
+                  \n 아이디 인증 밑 리얼타임DB를 구현하였습니다. 
+                  \n 로그인,  트윗 작성, 수정, 삭제와 같은 동작을 할 수 있습니다. 
+                    `,
+    github: `https://github.com/DonggiChae/nwitter`,
+    gitpages: 'https://donggichae.github.io/nwitter/#/',
+    stacks: ['HTML', 'CSS', 'Javascript','React','FireBase'],
+    img: "Twitter.png"
 
   },
   {
-    id: "d",
+    id: "CoinChart",
+    name: "CoinChart",
+    description:  `코인 순위를 확인하고 각각의 코인에 대한 정보를 확인할 수 있도록 구현하였습니다.
+                  \n Coin 상세페이지에서 한 페이지에서 코인 시세 차트와 가격정보를 볼 수 있도록 구현하였습니다.  
+                  \n 다크모드로 전환할 수 있는 스위치는 만들어 테마를 변경할 수 있도록 하였습니다.
+                  `,
+    github: `https://github.com/DonggiChae/CoinChart`,
+    gitpages: 'https://donggichae.github.io/CoinChart/',
+    stacks: ['HTML', 'CSS','React', 'Github'],
+    img: "CoinChart.png"
+  },
+  {
+    id: "NetflixClone",
+    name: "NetflixClone",
+    description:  `넷플릭스의 화면을 구현하였습니다.
+                  \n   
+                  \n 
+                  `,
+    github: `https://github.com/DonggiChae/nomflix-clone`,
+    gitpages: 'https://github.com/DonggiChae/nomflix-clone',
+    stacks: ['HTML', 'CSS','React', 'Github'],
+    img: "NetflixClone.png"
+  },
+  {
+    id: "TodoList",
+    name: "TodoList",
+    description:  `TodoList를 해야할 것, 하는 중인것,끝낸 것으로 나눠서 구현하였습니다.
+                  \n 각각의 리스트들을 드래그앤 드롭으로 이동시킬수 있습니다. 
+                  \n 필요 없는 리스트는 스레기통에 넣어 삭제할수 있도록 구현하였습니다.
+                  `,
+    github: `https://github.com/DonggiChae/trello-clone`,
+    gitpages: 'https://donggichae.github.io/trello-clone/',
+    stacks: ['HTML', 'CSS','React', 'Github'],
+    img: "TodoList.png"
+  },
+
+]
+
+export interface abouinterface {
+  id: string;
+  name: string;
+  description: string;
+  github: string;
+  gitpages?: string;
+  stacks: string[];
+  img: string;
+}
+
+
+export const aboutMe = [
+  {
+    id: "Kakao-Clone",
     name: "Kakao-Clone",
-    description:  `카카오톡 디자인을 CSS와 HTML을 사용하여 구현하였습니다.`,
+    description:   `카카오톡 디자인을 CSS와 HTML을 사용하여 구현하였습니다.
+                    \n 핸드폰 크기에 맞추어 구현하였습니다. 
+                    \n 그렇기 때문에 화면이 크면 화면이 크다는 문구가 나오게 하였습니다.`,
     github: `https://github.com/DonggiChae/kokoa-clone`,
     gitpages: 'https://donggichae.github.io/kokoa-clone/',
     stacks: ['HTML', 'CSS', 'Github'],
     img: "kakao_clone.png"
-
   },
 ]
-
-export const openSpring = { type: "spring", stiffness: 200, damping: 30 };
