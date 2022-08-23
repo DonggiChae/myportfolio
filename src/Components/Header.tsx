@@ -94,27 +94,27 @@ function Header() {
   return (
     <Nav variants={navVariants} animate={navAnimation} initial={"top"}>
       <Col>
-        <Link to='/'>
+        <Link to='/myportfolio/'>
         <Logo src={macFace}/>
         </Link>
         <Items>
           <Item>
-            <Link to="/">
+            <Link to="/myportfolio/">
               Home {homeMatch && <Circle layoutId="circle" />}
             </Link>
           </Item>
           <Item>
-            <Link to="/about">
+            <Link to="/myportfolio/about">
               About {aboutMatch && <Circle layoutId="circle" />}
             </Link>
           </Item>
           <Item>
-            <Link to="/skills">
+            <Link to="/myportfolio/skills">
               Skills {skillsMatch && <Circle layoutId="circle" />} {skillsIdMatch && <Circle layoutId="circle" />}
             </Link>
           </Item>
           <Item>
-            <Link to="/contact">
+            <Link to="/myportfolio/contact">
               Contact {contactMatch && <Circle layoutId="circle" />}
             </Link>
           </Item>
