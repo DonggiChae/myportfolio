@@ -75,11 +75,11 @@ interface IForm {
 }
 
 function Header() {
-  const homeMatch = useMatch("/myportfolio/");
-  const aboutMatch = useMatch("/myportfolio/about");
-  const skillsMatch = useMatch("/myportfolio/skills");
-  const skillsIdMatch = useMatch("/myportfolio/skills/:id");
-  const contactMatch = useMatch("/myportfolio/contact");
+  const homeMatch = useMatch("/");
+  const aboutMatch = useMatch("/about");
+  const skillsMatch = useMatch("/skills");
+  const skillsIdMatch = useMatch("/skills/:id");
+  const contactMatch = useMatch("/contact");
   const navAnimation = useAnimation();
   const { scrollY } = useViewportScroll();
   useEffect(() => {
@@ -94,27 +94,27 @@ function Header() {
   return (
     <Nav variants={navVariants} animate={navAnimation} initial={"top"}>
       <Col>
-        <Link to='/myportfolio/'>
+        <Link to='/'>
         <Logo src={macFace}/>
         </Link>
         <Items>
           <Item>
-            <Link to="/myportfolio/">
+            <Link to="/">
               Home {homeMatch && <Circle layoutId="circle" />}
             </Link>
           </Item>
           <Item>
-            <Link to="/myportfolio/about">
+            <Link to="/about">
               About {aboutMatch && <Circle layoutId="circle" />}
             </Link>
           </Item>
           <Item>
-            <Link to="/myportfolio/skills">
+            <Link to="/skills">
               Skills {skillsMatch && <Circle layoutId="circle" />} {skillsIdMatch && <Circle layoutId="circle" />}
             </Link>
           </Item>
           <Item>
-            <Link to="/myportfolio/contact">
+            <Link to="/contact">
               Contact {contactMatch && <Circle layoutId="circle" />}
             </Link>
           </Item>

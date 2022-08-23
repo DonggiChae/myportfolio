@@ -8,17 +8,17 @@ import Contact from "./Routes/Contact";
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Header />
       <Routes>
-        <Route path="/myportfolio/" element={<Home />}>
+        <Route path="/" element={<Home />}>
         </Route>
-        <Route path="/myportfolio/about" element={<About />}>
+        <Route path="/about" element={<About />}>
         </Route>
-        <Route path="/myportfolio/skills" element={<Skills />}>
-          <Route path="/myportfolio/skills/:id" element={<Skills />} />
+        <Route path="/skills" element={<Skills />}>
+          <Route path="/skills/:id" element={<Skills />} />
         </Route>
-        <Route path="/myportfolio/contact" element={<Contact />}>
+        <Route path="/contact" element={<Contact />}>
         </Route>
       </Routes>
     </BrowserRouter>

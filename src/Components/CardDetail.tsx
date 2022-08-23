@@ -89,7 +89,7 @@ function CardDetail({ selectedId }: { selectedId: string , layoutId: string}) {
       className="overlay"
       >
         <Section>
-          <Link to="/myportfolio/skills">
+          <Link to="/skills">
             <Exit>
               x
             </Exit>
