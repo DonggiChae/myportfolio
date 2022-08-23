@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCircleXmark } from '@fortawesome/free-solid-svg-icons'
 import { useRecoilState } from "recoil";
 import { isAboutOpenAtom } from "../atoms";
+import { Iaboutme, aboutMe } from "../data";
 
 
 const Article = styled(motion.article)`
@@ -33,11 +34,17 @@ const ExitButton = styled.button`
   top: 20px;
 `
 
-const Title = styled.h1`
+const Title = styled.div`
   padding-bottom: 20px;
   margin-left: 2%;
   font-size: 3em;
   font-weight: 600;
+`
+const Title2 = styled.div`
+  padding-bottom: 20px;
+  margin-left: 2%;
+  font-size: 2em;
+  font-weight: 500;
 `
 
 const Content =styled.p`
@@ -80,39 +87,23 @@ function AboutDetail() {
           About Me
         </Title>
         <Content>
-          zzzzzzzzzzzzzzzz
+          {aboutMe.simpleCoverLetter}
         </Content>
       </Section>
       <Section>
-        <Title>
-          About Me
-        </Title>
+        <Title2>
+          Position
+        </Title2>
         <Content>
-          zzzzzzzzzzzzzzzz
+          {aboutMe.position}
         </Content>
       </Section>
       <Section>
-        <Title>
-          About Me
-        </Title>
+        <Title2>
+          Skills
+        </Title2>
         <Content>
-          zzzzzzzzzzzzzzzz
-        </Content>
-      </Section>
-      <Section>
-        <Title>
-          About Me
-        </Title>
-        <Content>
-          zzzzzzzzzzzzzzzz
-        </Content>
-      </Section>
-      <Section>
-        <Title>
-          About Me
-        </Title>
-        <Content>
-          zzzzzzzzzzzzzzzz
+          {aboutMe.skills}
         </Content>
       </Section>
     </Article>

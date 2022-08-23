@@ -4,7 +4,7 @@ export interface projectDetail {
   description: string;
   github: string;
   gitpages?: string;
-  stacks: string[];
+  stacks: string;
   img: string;
 }
 
@@ -18,7 +18,7 @@ export const projects = [
                     \n 그렇기 때문에 화면이 크면 화면이 크다는 문구가 나오게 하였습니다.`,
     github: `https://github.com/DonggiChae/kokoa-clone`,
     gitpages: 'https://donggichae.github.io/kokoa-clone/',
-    stacks: ['HTML', 'CSS', 'Github'],
+    stacks: `'HTML', 'CSS', 'Github'`,
     img: "kakao_clone.png"
   },
   {
@@ -29,7 +29,7 @@ export const projects = [
                   `,
     github: `https://github.com/DonggiChae/paintJS`,
     gitpages: 'https://donggichae.github.io/paintJS/',
-    stacks: ['HTML', 'CSS', 'JavaScript','Github'],
+    stacks: `'HTML', 'CSS', 'JavaScript', 'Github'`,
     img: "paintJS.png"
   },
   {
@@ -40,7 +40,7 @@ export const projects = [
                   \n 채팅방 생성. 화상채팅 그리고 개인 메시지를 구현였습니다.`,
     github: `https://github.com/DonggiChae/zoom`,
     gitpages: 'https://github.com/DonggiChae/zoom',
-    stacks: ['WebSocket', 'Socket.io', 'WebRTC', 'JavaScript', 'pug'],
+    stacks: `'WebSocket', 'Socket.io', 'WebRTC', 'JavaScript', 'pug'`,
     img: "zoomClone.png"
   },
   {
@@ -53,7 +53,7 @@ export const projects = [
                   `,
     github: `https://github.com/DonggiChae/chrome-clone-page`,
     gitpages: 'https://donggichae.github.io/chrome-clone-page/',
-    stacks: ['HTML', 'CSS', 'Javascript','Github'],
+    stacks: `'HTML', 'CSS', 'Javascript', 'Github'`,
     img: "todos.png"
 
   },
@@ -66,7 +66,7 @@ export const projects = [
                     `,
     github: `https://github.com/DonggiChae/nwitter`,
     gitpages: 'https://donggichae.github.io/nwitter/#/',
-    stacks: ['HTML', 'CSS', 'Javascript','React','FireBase'],
+    stacks: `'HTML', 'CSS', 'Javascript', 'React','FireBase'`,
     img: "Twitter.png"
 
   },
@@ -79,7 +79,7 @@ export const projects = [
                   `,
     github: `https://github.com/DonggiChae/CoinChart`,
     gitpages: 'https://donggichae.github.io/CoinChart/',
-    stacks: ['HTML', 'CSS','React', 'Github'],
+    stacks: `'HTML', 'CSS', 'React', 'Github'`,
     img: "CoinChart.png"
   },
   {
@@ -91,7 +91,7 @@ export const projects = [
                   `,
     github: `https://github.com/DonggiChae/nomflix-clone`,
     gitpages: 'https://github.com/DonggiChae/nomflix-clone',
-    stacks: ['HTML', 'CSS','React', 'Github'],
+    stacks: `'HTML', 'CSS', 'React', 'Github'`,
     img: "NetflixClone.png"
   },
   {
@@ -103,33 +103,31 @@ export const projects = [
                   `,
     github: `https://github.com/DonggiChae/trello-clone`,
     gitpages: 'https://donggichae.github.io/trello-clone/',
-    stacks: ['HTML', 'CSS','React', 'Github'],
+    stacks: `'HTML', 'CSS', 'React', 'Github'`,
     img: "TodoList.png"
   },
 
 ]
 
-export interface abouinterface {
-  id: string;
-  name: string;
-  description: string;
-  github: string;
-  gitpages?: string;
-  stacks: string[];
-  img: string;
+export interface Iaboutme {
+  school: string;
+  major: string;
+  position: string;
+  skills: string;
+  simpleCoverLetter: string;
 }
 
 
-export const aboutMe = [
+export const aboutMe = 
   {
-    id: "Kakao-Clone",
-    name: "Kakao-Clone",
-    description:   `카카오톡 디자인을 CSS와 HTML을 사용하여 구현하였습니다.
-                    \n 핸드폰 크기에 맞추어 구현하였습니다. 
-                    \n 그렇기 때문에 화면이 크면 화면이 크다는 문구가 나오게 하였습니다.`,
-    github: `https://github.com/DonggiChae/kokoa-clone`,
-    gitpages: 'https://donggichae.github.io/kokoa-clone/',
-    stacks: ['HTML', 'CSS', 'Github'],
-    img: "kakao_clone.png"
-  },
-]
+    school: "공주대학교",
+    major: "기계설계과",
+    position:   `프로트엔드 개발자`,
+    skills: `Python,Git,React,Github,JavaScript,HTML,CSS,
+            TypeScript`,
+    simpleCoverLetter: `프론트엔드 신입 개발자입니다.
+                        웹 페이지를 클론 코딩하면서 웹을 공부를 시작하였습니다.
+                        클론 코딩을 하면서 TypeScript와 React에 대해서 공부하였습니다. 그리고 WebRTC, SocketIO, WebSockets을 사용하여 간단한 화상채팅 서비스를 구현하였습니다.
+                        FireBase를 사용하여 리얼타임DB를 구현하였습니다. Next.js를 사용하여 서버사이드렌더링에 대해서 학습하였습니다.
+                        더욱 좋은 경험을 제공하기 위해 꾸준히 배우고 성장하는 개발자가 되겠습니다.`,
+  }

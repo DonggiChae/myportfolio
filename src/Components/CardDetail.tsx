@@ -32,6 +32,10 @@ const Article = styled(motion.article)`
 const Section = styled.section`
   padding: 3%;
 `
+const Exit = styled.div`
+  font-size: 2em;
+  margin-left: 90%;
+`
 
 const Title = styled.h1`
   padding-bottom: 20px;
@@ -40,9 +44,18 @@ const Title = styled.h1`
   font-weight: 600;
 `
 
+const Title2 = styled.h1`
+  padding-bottom: 20px;
+  margin-left: 2%;
+  font-size: 2em;
+  font-weight: 600;
+`
+
 const Content =styled.p`
   font-size: 1.5em;
   display: flex;
+  margin-left: 2%;
+  padding-bottom: 20px;
   flex-direction: column;
 `
 const cardDetailVariants = {
@@ -65,7 +78,7 @@ function CardDetail({ selectedId }: { selectedId: string , layoutId: string}) {
 
   return(
     <Container transition={{ duration: 0.15, delay: 0.1 }}>
-      <Link to="/skills">
+      <Link to="/skills"></Link>
       <Article 
       variants={cardDetailVariants} 
       initial='hidden'
@@ -76,15 +89,36 @@ function CardDetail({ selectedId }: { selectedId: string , layoutId: string}) {
       className="overlay"
       >
         <Section>
+          <Link to="/skills">
+            <Exit>
+              x
+            </Exit>
+          </Link>
           <Title>
             {project.name}
           </Title>
+          <Title2>
+            Description
+          </Title2>
           <Content>
-            zzzzzzzzzzzzzzzz
+            {project.description}
           </Content>
+          <Title2>
+            Stacks
+          </Title2>
+          <Content>
+            {project.stacks}
+          </Content>
+          <a href={project.github}>
+            <Title2>
+              Github
+            </Title2>
+            <Content>
+              {project.github}
+            </Content>
+          </a>
         </Section>
       </Article>
-      </Link>
     </Container>
   );
 }
