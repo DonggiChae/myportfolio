@@ -106,6 +106,18 @@ export const projects = [
     stacks: `'HTML', 'CSS', 'React', 'Github'`,
     img: "TodoList.png"
   },
+  {
+    id: "wantedChallenge1",
+    name: "wantedChallenge1",
+    description:  `원티드에서 프리온보딩 챌린지를 통해서 2주동안 과제 수행의 결과입니다.
+                  TypeScript와 React를 사용하였습니다.
+                  ReactQuery를 사용하여 서버에서 API를 불러오고 수정하였습니다.
+                  `,
+    github: `https://github.com/DonggiChae/wanted-pre-onboarding-challenge-fe-1`,
+    gitpages: 'https://github.com/DonggiChae/wanted-pre-onboarding-challenge-fe-1',
+    stacks: `'HTML', 'CSS', 'React', 'Github', 'TypeScript', 'ReactQuery'`,
+    img: "LogInPage.png"
+  },
 
 ]
 
