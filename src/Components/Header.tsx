@@ -75,11 +75,11 @@ interface IForm {
 }
 
 function Header() {
-  const homeMatch = useMatch("/");
-  const aboutMatch = useMatch("/about");
-  const skillsMatch = useMatch("/skills");
-  const skillsIdMatch = useMatch("/skills/:id");
-  const contactMatch = useMatch("/contact");
+  const homeMatch = useMatch("/myportfolio/");
+  const aboutMatch = useMatch("/myportfolio/about");
+  const skillsMatch = useMatch("/myportfolio/skills");
+  const skillsIdMatch = useMatch("/myportfolio/skills/:id");
+  const contactMatch = useMatch("/myportfolio/contact");
   const navAnimation = useAnimation();
   const { scrollY } = useViewportScroll();
   useEffect(() => {

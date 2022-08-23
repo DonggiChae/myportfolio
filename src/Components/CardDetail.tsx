@@ -78,7 +78,7 @@ function CardDetail({ selectedId }: { selectedId: string , layoutId: string}) {
 
   return(
     <Container transition={{ duration: 0.15, delay: 0.1 }}>
-      <Link to="/skills"></Link>
+      <Link to="/myportfolio/skills"></Link>
       <Article 
       variants={cardDetailVariants} 
       initial='hidden'
@@ -89,7 +89,7 @@ function CardDetail({ selectedId }: { selectedId: string , layoutId: string}) {
       className="overlay"
       >
         <Section>
-          <Link to="/skills">
+          <Link to="/myportfolio/skills">
             <Exit>
               x
             </Exit>
