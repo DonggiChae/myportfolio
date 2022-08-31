@@ -3,9 +3,9 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Cards from "./Cards"
 import { useRecoilState } from "recoil";
-import { isCardStopAtom } from "../atoms";
+import { isCardStopAtom } from "../Atoms/atoms";
 import styled from "styled-components";
-import { projects } from "../data";
+import { projects } from "../data/data";
 
 const Container = styled.div`
 

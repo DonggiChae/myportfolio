@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { projectDetail } from "../data";
+import { projectDetail } from "../data/data";
 
 const Article = styled(motion.div)`
   background: rgb(240, 239, 239, 0);

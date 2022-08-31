@@ -11,6 +11,7 @@ const Wrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  font-family: 'Noto Sans KR', sans-serif;
 `;
 
 const CenterCarousel = styled.div`

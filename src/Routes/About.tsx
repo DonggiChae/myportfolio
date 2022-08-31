@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { motion, AnimatePresence} from "framer-motion";
 import AboutDetail from "./aboutDetail";
 import { useRecoilState } from "recoil";
-import { isAboutOpenAtom } from "../atoms";
+import { isAboutOpenAtom } from "../Atoms/atoms";
 
 import whisperMotion from '../mimoji/whisperMotion.png'
 

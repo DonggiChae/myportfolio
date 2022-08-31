@@ -3,14 +3,15 @@ import { motion } from "framer-motion";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCircleXmark } from '@fortawesome/free-solid-svg-icons'
 import { useRecoilState } from "recoil";
-import { isAboutOpenAtom } from "../atoms";
-import { Iaboutme, aboutMe } from "../data";
+import { isAboutOpenAtom } from "../Atoms/atoms";
+import { Iaboutme, aboutMe } from "../data/data";
 
 
 const Article = styled(motion.article)`
   background: #f0efef;
   border-radius: 30px;
   color: black;
+  font-family: 'Noto Sans KR', sans-serif;
   width: 100%;
   height: 600px;
   overflow: auto;
