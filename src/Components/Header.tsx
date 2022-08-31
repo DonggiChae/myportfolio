@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { motion, useAnimation, useViewportScroll } from "framer-motion";
 import { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
-import macFace from "../mimoji/macFace.png"
+import macFace from "../data/mimoji/macFace.png"
 
 const Nav = styled(motion.nav)`
   display: flex;

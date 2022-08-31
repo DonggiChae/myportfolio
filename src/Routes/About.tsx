@@ -4,7 +4,7 @@ import AboutDetail from "./aboutDetail";
 import { useRecoilState } from "recoil";
 import { isAboutOpenAtom } from "../Atoms/atoms";
 
-import whisperMotion from '../mimoji/whisperMotion.png'
+import whisperMotion from '../data/mimoji/whisperMotion.png'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCommentDots } from '@fortawesome/free-solid-svg-icons'

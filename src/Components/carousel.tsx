@@ -8,7 +8,7 @@ import styled from "styled-components";
 import { projects } from "../data/data";
 
 const Container = styled.div`
-
+  font-size: 1.2em;
 `
 
 

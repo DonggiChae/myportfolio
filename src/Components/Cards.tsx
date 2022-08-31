@@ -51,7 +51,7 @@ function Cards(props: projectDetail) {
             {props.name}
         </Title>
       </Section>
-      <Img src={require(`../img/${props.img}`)}/>
+      <Img src={require(`../data/img/${props.img}`)}/>
       </Link>
     </Article>
   );

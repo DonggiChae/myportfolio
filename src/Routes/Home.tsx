@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import  hiMotion   from '../mimoji/hiMotion.png'
+import  hiMotion   from '../data/mimoji/hiMotion.png'
 
 
 const Wrapper = styled.div`
