@@ -7,32 +7,8 @@ import { isAboutOpenAtom } from "../Atoms/atoms";
 import { Iaboutme, aboutMe } from "../data/data";
 
 
-const Article = styled(motion.article)`
-  background: #f0efef;
-  border-radius: 30px;
-  color: black;
-  font-family: 'Noto Sans KR', sans-serif;
-  width: 100%;
-  height: 600px;
-  overflow: auto;
-  margin-top: 100px;
-  &::-webkit-scrollbar {
-    display: none;
-  }
-
-`
 const Section = styled.section`
   padding: 3%;
-`
-
-const ExitButton = styled.button`
-  border: 0;
-  border-radius: 30px;
-  font-size: 1.5em;
-  margin-top: 1%;
-  margin-left: 90%;
-  position: sticky;
-  top: 20px;
 `
 
 const Title = styled.div`
@@ -73,16 +49,7 @@ function AboutDetail() {
   const toggleAbout = () => setAboutOpen((prev: boolean) => !prev);
 
   return(
-    <Article
-      variants={aboutDetailVariants}
-      initial="hidden"
-      animate="visible"
-      exit="exit"
-      transition={{ duration: 1 }}
-    >
-      <ExitButton onClick={toggleAbout}>
-        <FontAwesomeIcon icon={faCircleXmark} />
-      </ExitButton>
+    <div className="text-white font-mono max-h-screen mr-56">
       <Section>
         <Title>
           About Me
@@ -107,7 +74,7 @@ function AboutDetail() {
           {aboutMe.skills}
         </Content>
       </Section>
-    </Article>
+    </div>
   );
 }
 

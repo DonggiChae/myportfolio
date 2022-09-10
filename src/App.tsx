@@ -1,27 +1,16 @@
 import { BrowserRouter,Routes, Route } from "react-router-dom";
-import Header from "./Components/Header";
-import Home from "./Routes/Home";
-import About from "./Routes/About";
-import Skills from "./Routes/Skills";
-import Contact from "./Routes/Contact";
+import Header from "./Components/scrollReact/Header";
+import ScrollContents from "./Components/scrollReact/scrollContents";
 
 
 function App() {
   return (
-    <BrowserRouter basename={process.env.PUBLIC_URL}>
-      <Header />
-      <Routes>
-        <Route path="/" element={<Home />}>
-        </Route>
-        <Route path="/about" element={<About />}>
-        </Route>
-        <Route path="/skills" element={<Skills />}>
-          <Route path="/skills/:id" element={<Skills />} />
-        </Route>
-        <Route path="/contact" element={<Contact />}>
-        </Route>
-      </Routes>
-    </BrowserRouter>
+    <div className="ml-20 font-mono">
+      <div className="flex">
+        <ScrollContents />
+        <Header />
+      </div>
+    </div>
   );
 }
 

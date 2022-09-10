@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import {  projects, projectDetail} from '../data/data';
+import {  projects, projectDetail} from '../../data/data';
 
 const Container = styled(motion.div)`
   background: rgb(219, 219, 219, 0.3);

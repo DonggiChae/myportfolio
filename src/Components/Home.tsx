@@ -46,7 +46,7 @@ const Content =styled.p`
 
 function Home() {
   return (
-    <Wrapper>
+    <div className="bg-black overflow-x-hidden">
       <Introduce>
       <Frame>
         <HelloMimoji src={hiMotion} />
@@ -63,7 +63,7 @@ function Home() {
           </Content>
         </Article>
       </Introduce>
-    </Wrapper>
+    </div>
     
   );
 }

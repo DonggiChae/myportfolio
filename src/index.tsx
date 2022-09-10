@@ -2,8 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
 import { ThemeProvider } from "styled-components";
-import { theme } from "./theme"
-import GlobalStyle from './GlobalStyles'
+import { theme } from "./styles/theme"
+import GlobalStyle from './styles/GlobalStyles';
+import './styles/index.css';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { RecoilRoot } from "recoil";
 

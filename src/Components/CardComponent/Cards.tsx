@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { projectDetail } from "../data/data";
+import { projectDetail } from "../../data/data";
 
 const Article = styled(motion.div)`
   background: rgb(240, 239, 239, 0);
@@ -45,14 +45,12 @@ function Cards(props: projectDetail) {
 
   return(
     <Article>
-      <Link to={props.id}>
       <Section>
         <Title>
             {props.name}
         </Title>
+        <Img src={require(`../../data/img/${props.img}`)}/>
       </Section>
-      <Img src={require(`../data/img/${props.img}`)}/>
-      </Link>
     </Article>
   );
 }
