@@ -17,10 +17,7 @@ const Article = styled(motion.div)`
   border-color: black;
 
 `
-const Section = styled.div`
-  width: 100%;
-  hight: 100%;
-`
+
 
 const Title = styled.h1`
   position: relative;
@@ -31,11 +28,6 @@ const Title = styled.h1`
   z-index: 1;
 `
 
-const Content =styled.p`
-  font-size: 1.5em;
-  display: flex;
-  flex-direction: column;
-`
 const Img = styled.img`
   max-width: 100%;
   height: auto;
@@ -45,12 +37,12 @@ function Cards(props: projectDetail) {
 
   return(
     <Article>
-      <Section>
+      <div className="w-full h-full">
         <Title>
             {props.name}
         </Title>
         <Img src={require(`../../data/img/${props.img}`)}/>
-      </Section>
+      </div>
     </Article>
   );
 }

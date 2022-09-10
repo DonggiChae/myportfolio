@@ -7,9 +7,6 @@ import { isAboutOpenAtom } from "../Atoms/atoms";
 import { Iaboutme, aboutMe } from "../data/data";
 
 
-const Section = styled.section`
-  padding: 3%;
-`
 
 const Title = styled.div`
   padding-bottom: 20px;
@@ -29,20 +26,6 @@ const Content =styled.p`
   display: flex;
   flex-direction: column;
 `
-const aboutDetailVariants = {
-  hidden: {
-    scale: 0.4,
-    x : - 200,
-  },
-  visible: {
-    scale: 1,
-    x: 0,
-  },
-  exit: {
-    scale: 0,
-  },
-}
-
 
 function AboutDetail() {
   const [isAboutOpen , setAboutOpen] = useRecoilState<boolean>(isAboutOpenAtom);
@@ -50,30 +33,30 @@ function AboutDetail() {
 
   return(
     <div className="text-white font-mono max-h-screen mr-56">
-      <Section>
+      <div className="m-12">
         <Title>
           About Me
         </Title>
         <Content>
           {aboutMe.simpleCoverLetter}
         </Content>
-      </Section>
-      <Section>
+      </div>
+      <div className="m-12">
         <Title2>
           Position
         </Title2>
         <Content>
           {aboutMe.position}
         </Content>
-      </Section>
-      <Section>
+      </div>
+      <div className="m-12">
         <Title2>
           Skills
         </Title2>
         <Content>
           {aboutMe.skills}
         </Content>
-      </Section>
+      </div>
     </div>
   );
 }
